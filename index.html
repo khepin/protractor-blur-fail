@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="myApp.js"></script>
+</head>
+<body ng-app="MyApp">
+    <div ng-controller="DemoCtrl">
+        <input id="email" ng-model="email" ng-blur="onBlur()" ng-change="onChange()" type="email" required>
+        <div id="blurEmail">
+            The email will be shown here when leaving the field: {{blurEmail}}
+        </div>
+        <div id="changeEmail">
+            The email will be shown here when leaving the field: {{changeEmail}}
+        </div>
+    </div>
+</body>
+</html>
